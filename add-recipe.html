@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add Recipe - Recipe Book</title>
+</head>
+<body style="background-color: bisque;">
+   <header>
+      <ul>
+         <nav>
+            <li><a href="index.html">Home</a><br</li>
+            <li><a href="add-recipe.html">Add Recipe</a><br></li>
+            <li><a href="recipe-list.html">Recipe list</a><br></li>
+          </nav>
+      </ul>
+   </header>
+   
+   <div class="form-container">
+      <h2>Add Your Recipe</h2>
+      <form>
+            <label for="recipeName">Recipe Name:</label><br> 
+            <input type="text" name="recipeName" id="recipeName" placeholder="Enter Recipe Name" required style="width: 180px;height: 25px;"> <br> <br> 
+           
+            <label for="Ingredients">Ingredients:</label> <br style="position: absolute;"> 
+            <textarea name="Ingredients" id="Ingredients" rows="3" cols="50" placeholder="List Ingredients Here" required style="width: 250px;height: 90px;"></textarea> <br> <br>
+         
+            <label for="Instructions">Instructions:</label><br> 
+            <textarea name="Instructions" id="Instructions" rows="1.5" cols="30" placeholder="Enter Cooking Instructions Here" required style="width: 330px;height: 120px;"></textarea><br><br>
+          
+            <label for="imageURL">Image URL:</label> <br>
+            <input type="url" name="imageURL" id="imageURL" placeholder="Paste the link to an image" required style="width: 200px;height: 25px;"><br><br>
+       
+           <label for="Category">Recipe Category:</label><br> 
+           <select name="Category" id="Category" required style="width: 200px;height: 25px;"> <br> <br>
+              <option value="Desserts">Desserts</option>
+              <option value="Drinks">Drinks</option>
+              <option value="Vegetarian">Vegetarian</option>
+              <option value="Healthy Recipe">Healthy Recipe</option>
+              <option value="Pasta">Pasta</option>
+              <option value="All">All</option>
+           </select><br> <br>
+        
+   
+        <button type="submit">Submit Recipe</button>
+      </form>
+   </div>
+</body>
+</html>
